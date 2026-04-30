@@ -110,8 +110,11 @@ nav a {
   color:white;
 }
 
-.hero-right img {
-  width:380px;
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PROGRAMS */
