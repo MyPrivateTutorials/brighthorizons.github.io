@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bright Horizons Academy</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7ff, #fffbe6);
-    }
-    .watermark {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.08;
-      z-index: 0;
-      width: 500px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Horizons Academy</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Watermark Logo -->
-  <img src="logo.png" class="watermark" alt="logo watermark">
+<!-- FLOATING STARS -->
+<div class="stars"></div>
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-6 text-center shadow-lg relative z-10">
-    <img src="logo.png" class="mx-auto w-24 mb-2">
-    <h1 class="text-3xl font-bold">Bright Horizons Academy</h1>
-    <p class="text-sm mt-1">Where Young Minds Shine</p>
-  </header>
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📞 6300422368</span>
+  <span>📍 Vegetable Market Lane, Nallakunta, Hyderabad - 500044</span>
+</div>
 
-  <!-- Hero Section -->
-  <section class="text-center py-12 px-4 relative z-10">
-    <h2 class="text-3xl font-bold text-blue-700">Fun Learning for Bright Kids 🎈</h2>
-    <p class="mt-3 text-gray-700 text-lg">Interactive, playful and effective learning for primary school students.</p>
-  </section>
+<!-- NAVBAR -->
+<header class="navbar">
+  <img src="logo.png" class="logo">
 
-  <!-- About -->
-  <section class="bg-white py-10 px-6 max-w-4xl mx-auto rounded-2xl shadow-xl relative z-10">
-    <h3 class="text-2xl font-bold text-purple-600 mb-3">About Us</h3>
-    <p class="text-gray-700">We help children grow with confidence, creativity, and strong fundamentals using fun-based teaching methods.</p>
-  </section>
+  <nav>
+    <a class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Programs</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <!-- Programs -->
-  <section class="py-12 px-6 text-center relative z-10">
-    <h3 class="text-2xl font-bold text-blue-700 mb-8">Our Programs 🌟</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-yellow-100 p-5 rounded-2xl shadow hover:scale-105 transition">Communication Skills</div>
-      <div class="bg-pink-100 p-5 rounded-2xl shadow hover:scale-105 transition">Public Speaking</div>
-      <div class="bg-green-100 p-5 rounded-2xl shadow hover:scale-105 transition">Reading Skills</div>
-      <div class="bg-blue-100 p-5 rounded-2xl shadow hover:scale-105 transition">Confidence Building</div>
-      <div class="bg-purple-100 p-5 rounded-2xl shadow hover:scale-105 transition">Personality Development</div>
-      <div class="bg-orange-100 p-5 rounded-2xl shadow hover:scale-105 transition">Memory Improvement</div>
-      <div class="bg-teal-100 p-5 rounded-2xl shadow hover:scale-105 transition">Life Skills & Relationships</div>
-      <div class="bg-red-100 p-5 rounded-2xl shadow hover:scale-105 transition">Mathematics Fun</div>
-      <div class="bg-indigo-100 p-5 rounded-2xl shadow hover:scale-105 transition">Basics in Other Languages</div>
-    </div>
-  </section>
+  <a href="tel:6300422368" class="btn-enroll">🎓 Enrol Now</a>
+</header>
 
-  <!-- Contact -->
-  <section class="bg-gradient-to-r from-blue-200 to-purple-200 py-10 text-center relative z-10">
-    <h3 class="text-2xl font-bold text-blue-800">Contact Us 📞</h3>
-    <p class="mt-3 text-lg">6300422368</p>
-    <p class="text-md">At Vegetable Market Lane, Nallakunta, Hyderabad - 500044.</p>
-  </section>
+<!-- HERO -->
+<div class="hero-right">
+  <div class="sun">
+    <div class="rays"></div>
+    <img src="kids.png" class="kids">
+  </div>
+</div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white text-center p-4 relative z-10">
-    <p>© 2026 Bright Horizons Academy</p>
-  </footer>
+<!-- PROGRAMS -->
+<section class="programs">
+  <h4>OUR PROGRAMS</h4>
+  <h2>Building Skills. Shaping Futures.</h2>
 
+  <div class="program-grid">
+
+    <div class="card">💬 Communication Skills</div>
+    <div class="card">🎤 Public Speaking</div>
+    <div class="card">📖 Reading Skills</div>
+    <div class="card">⭐ Confidence Building</div>
+    <div class="card">💎 Personality Development</div>
+    <div class="card">🧠 Memory Improvement</div>
+    <div class="card">👨‍👩‍👧 Life Skills</div>
+    <div class="card">➕ Mathematics Fun</div>
+    <div class="card">🌍 Languages</div>
+    <div class="card">🎓 School Curriculum</div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+  <div class="feature-card">
+    <h3>🛡 Safe & Nurturing</h3>
+    <p>Children feel safe, loved and encouraged to grow.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>🚀 Expert Guidance</h3>
+    <p>Experienced mentors guide every child.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>🏆 Holistic Growth</h3>
+    <p>Focus on academics + personality development.</p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Get in Touch</h3>
+    <p>📞 6300422368</p>
+    <p>📍 Hyderabad</p>
+    <a href="tel:6300422368">Call Now</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h2>Let’s Build a Bright Future Together! 🌈</h2>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
