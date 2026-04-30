@@ -226,8 +226,11 @@ footer {
 }
 
 .kids {
-  width: 350px;
+  max-width: 100%;   /* allows full width but not overflow */
+  height: auto;      /* ✅ keeps original aspect ratio */
+  display: block;
   position: relative;
+  z-index: 1;
 }
 
 <section class="form-section">
